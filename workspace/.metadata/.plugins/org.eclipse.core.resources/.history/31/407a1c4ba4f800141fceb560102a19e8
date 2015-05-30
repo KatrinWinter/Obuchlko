@@ -1,0 +1,38 @@
+
+import java.util.Scanner;
+
+public class Ebana {
+		
+	public static void main(String[] args) {
+
+		Human[]humans = new Human[50];
+		Worker[]workers = new Worker[50];
+		Human[]newHumans = new Human[100];
+		
+        for (int i=0; i<=49; i++){
+        humans[i] = new Human(1, "Name"+(i+1), "Surman"+(i+1));
+//        System.out.println(humans[i].getSexAsString() + humans[i].getName() + humans[i].getSurname());
+        }
+        
+        for (int i=0; i<=49; i++){
+            workers[i] = new Worker(1, "Name"+(51+i), "Surman"+(51+i));       	
+//        System.out.println(workers[i].getSexAsString() + workers[i].getName() + workers[i].getSurname());
+        }
+
+        for (int i=0; i<=99; i++){
+        	if (i<=49) {
+            	newHumans[i] = humans[i];	
+        	}
+        	else {
+        		newHumans[i]  = new Human(((Human)workers[i-50]).getSex(), ((Human)workers[i-50]).getName(), ((Human)workers[i-50]).getSurname());	
+        	}
+        }
+         for (int i=0; i<=99; i++){
+             System.out.println(newHumans[i].getSexAsString() + newHumans[i].getName() + newHumans[i].getSurname());
+         }
+         for (int i=0; i<=99; i=i+2){
+        	 newHumans[i].setName("Тимофей");
+             System.out.println(newHumans[i].getSexAsString() + newHumans[i].getName() + newHumans[i].getSurname());
+         }
+	}	
+}

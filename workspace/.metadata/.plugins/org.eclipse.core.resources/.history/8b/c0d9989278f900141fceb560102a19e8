@@ -1,0 +1,19 @@
+
+
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
+
+public class Ebana {
+		
+	public static void main(String[] args) {
+
+		JFrame myFrame = new JFrame("Суперокно");
+		myFrame.setSize(600, 100);
+		myFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		myFrame.setVisible(true);
+		myFrame.setLayout(new GridLayout(3,2));
+	}
+
+}

@@ -1,0 +1,38 @@
+
+
+import java.util.List;
+import java.util.ArrayList;
+public class Ebana {
+		
+	public static void main(String[] args) {
+
+		List <Human> humans = new ArrayList <Human> ();
+		List <Worker> workers = new ArrayList <Worker> ();
+		      
+        for (int i=0; i<=49; i++){
+        humans.add(i, new Human(1, "Name"+(i+1), "Surname"+(i+1)));
+        }
+        
+        for (int i=0; i<=49; i++){
+            workers.add(i, new Worker(1, "Name"+(51+i), "Surname"+(51+i)));    
+        }
+
+        int sum = humans.size()+workers.size();
+    	List <Human> newHumans = new ArrayList <Human> (sum);
+    	
+        for (int i=0; i<sum; i++){
+        	if (i<humans.size()) {
+            	newHumans.add(i, (humans.get(i)));	
+        	}
+        	else {
+        		newHumans.add(i, new Human(((Human)workers.get(i-humans.size())).getSex(), ((Human)workers.get(i-humans.size())).getName(), ((Human)workers.get(i-humans.size())).getSurname()));	
+        	}
+        }
+         for (int i=0; i<sum; i++){
+        	 newHumans.get(i).setName("Тимофей");
+        	 newHumans.get(i).setSurname("Великий");      	 
+        	 System.out.println(newHumans.get(i).getSexAsString() + newHumans.get(i).getName() + newHumans.get(i).getSurname());
+         }
+	}
+
+}

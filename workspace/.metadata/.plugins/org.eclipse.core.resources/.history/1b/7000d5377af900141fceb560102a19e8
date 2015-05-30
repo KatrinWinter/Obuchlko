@@ -1,0 +1,26 @@
+
+
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.WindowConstants;
+
+public class Ebana {
+		
+	public static void main(String[] args) {
+
+		JFrame myFrame = new JFrame("Суперокно");
+		myFrame.setSize(600, 100);
+		myFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		JLabel l = new JLabel();
+		l.setText("ну нихрена");
+		myFrame.add( l );
+		JTextField txt = new JTextField("кек");
+		myFrame.add(txt);
+		myFrame.setVisible(true);
+
+	}
+
+}

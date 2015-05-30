@@ -1,0 +1,32 @@
+
+
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.WindowConstants;
+
+public class Ebana {
+		
+	public static void main(String[] args) {
+
+		JFrame myFrame = new JFrame("Суперокно");
+		myFrame.setSize(800, 600);
+		myFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		JLabel l = new JLabel();
+		l.setText("Введите имя");
+		myFrame.add( l );		
+		JTextField txt1 = new JTextField("Тут имя");
+		myFrame.add(txt1);
+		JLabel n = new JLabel();
+		n.setText("Введите фамилию");		
+		myFrame.add( n );
+		JTextField txt2 = new JTextField("Тут фамилия");
+		myFrame.add(txt2);
+		myFrame.setLayout();
+		myFrame.setVisible(true);
+
+	}
+
+}

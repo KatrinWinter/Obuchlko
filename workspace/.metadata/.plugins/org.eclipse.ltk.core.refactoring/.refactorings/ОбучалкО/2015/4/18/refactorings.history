@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Man.java&apos; to &apos;Ebana.java&apos;&#x0D;&#x0A;- Original project: &apos;ОбучалкО&apos;&#x0D;&#x0A;- Original element: &apos;Man.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Ebana.java&apos;" description="Rename compilation unit &apos;Man.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Man.java" name="Ebana.java" references="false" stamp="1430317331242" version="1.0"/>
+</session>
